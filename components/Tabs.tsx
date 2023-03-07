@@ -1,8 +1,10 @@
-import React, {ReactNode} from 'react';
+import React, {createContext} from 'react';
 import Tab from './Tab';
 import TabContent from './Tab';
 
 const Tabs = () => {
+    const activeTabContext = createContext(1);
+    
     return(
         <div className="tabs">
             <Tab number={1}>2015</Tab>
