@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {activeTabContext} from './activeTabContext';
 
-const Tab = ({number, children}) => {
+const Tab = ({active, children}) => {
+    const classes = 'tabItem';
+    active? classes + ' active' : null;
+
+    const setActiveTab = () => {
+        
+    }
+
     return(
-        <div></div>    
+        <li className={classes}>{children}</li>    
     )
 }
 
