@@ -1,11 +1,18 @@
 import Link from 'next/link'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 import Tabs from '../components/Tabs'
+import Store from '../components/Store';
 
 const IndexPage = () => {
-  <Layout title="Home | Next.js + TypeScript Example">
+  // <Layout title="Home | Next.js + TypeScript Example">
+  //   <Tabs></Tabs>
+  // </Layout>
+  return(
+  <Store>
     <Tabs></Tabs>
-  </Layout>
+  </Store>  
+  )
+  
 }
 
 // const IndexPage = () => (
