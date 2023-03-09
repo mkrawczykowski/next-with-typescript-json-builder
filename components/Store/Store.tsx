@@ -4,7 +4,7 @@ const initialTabState = 'tab1';
 
 export const ActiveTabContext = createContext(undefined);
 
-const TabsStore = ({children}) => {
+const Store = ({children}) => {
     const [activeTabState, setActiveTabState] = useState(initialTabState);
 
     return(
@@ -12,4 +12,4 @@ const TabsStore = ({children}) => {
     )
 }
 
-export default TabsStore;
+export default Store;

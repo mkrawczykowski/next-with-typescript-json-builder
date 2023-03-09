@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import {activeTabContext} from './activeTabContext';
 
 const Tab = ({active, children}) => {
     const classes = 'tabItem';

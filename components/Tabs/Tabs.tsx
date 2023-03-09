@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react';
 // import Tab from './Tab';
 // import TabContent from './Tab';
 // import {Context} from './Store';
-import {ActiveTabContext} from './TabsStore'
+import {ActiveTabContext} from '../Store/Store'
 
 const Tabs = () => {
     const [activeTabState, setActiveTabState] = useContext(ActiveTabContext);

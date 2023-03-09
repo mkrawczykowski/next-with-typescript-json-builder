@@ -1,7 +1,7 @@
 import Link from 'next/link'
 // import Layout from '../components/Layout'
-import Tabs from '../components/Tabs'
-import TabsStore from '../components/TabsStore';
+import Tabs from '../components/Tabs/Tabs'
+import TabsStore from '../components/Store/Store';
 
 const IndexPage = () => {
   // <Layout title="Home | Next.js + TypeScript Example">
