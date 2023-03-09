@@ -1,16 +1,16 @@
 import Link from 'next/link'
 // import Layout from '../components/Layout'
 import Tabs from '../components/Tabs'
-import Store from '../components/Store';
+import TabsStore from '../components/TabsStore';
 
 const IndexPage = () => {
   // <Layout title="Home | Next.js + TypeScript Example">
   //   <Tabs></Tabs>
   // </Layout>
   return(
-  <Store>
+  <TabsStore>
     <Tabs></Tabs>
-  </Store>  
+  </TabsStore>  
   )
   
 }
