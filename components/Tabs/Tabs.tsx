@@ -1,7 +1,7 @@
 import React, {useState, useContext} from 'react';
-// import Tab from './Tab';
-// import TabContent from './Tab';
-// import {Context} from './Store';
+import styles from './Tabs.module.scss';
+import Tab from '../Tab/Tab';
+import TabContent from '../TabContent/TabContent';
 import {ActiveTabContext} from '../Store/Store'
 
 const Tabs = () => {
@@ -12,12 +12,29 @@ const Tabs = () => {
     const handleOnClick3 = () => {
         setActiveTabState('tab3')
     }
+
+    const isActive = (tabNumber: string) => {
+        return activeTabState === tabNumber? 1 : 0;
+    }
+
     return(
         <>
-            <p>test</p>
-            <p>{activeTabState}</p>
-            <button type="button" onClick={handleOnClick2}>Set 2</button>
-            <button type="button" onClick={handleOnClick3}>Set 3</button>
+            <div className={styles.tabs}>
+                <ul>
+                    <Tab active={isActive('tab1')}>2015</Tab>
+                    <Tab active={isActive('tab2')}>1980</Tab>
+                    <Tab active={isActive('tab3')}>Final</Tab>    
+                </ul>
+                
+                <TabContent active={isActive('tab1')}>
+                    Tab 1 content
+                </TabContent>
+                <TabContent active={isActive('tab2')}>
+                    Tab 2 content
+                </TabContent>
+                <TabContent active={isActive('tab3')}>
+                    Tab 3 content</TabContent>
+            </div>
         </>
     )
     // const [state, setState] = useContext(Context)
