@@ -1,5 +1,9 @@
 @use '../../styles/global/' as global;
 
 .tabs{
-    background-color: global.$blue3;
+
+    &List{
+        display: flex;
+        padding: 1rem 1rem 0 1rem;
+    }
 }

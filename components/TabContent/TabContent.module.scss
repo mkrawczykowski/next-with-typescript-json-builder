@@ -1,6 +1,11 @@
+@use '../../styles/global/' as global;
+
 .tabContent{
-    background-color: gray;
+    background-color: global.$blue1;
     display: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 .active{

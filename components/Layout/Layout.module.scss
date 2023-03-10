@@ -1,4 +1,7 @@
+@use '../../styles/global/' as global;
+
 .layout{
-    max-width: 60rem;
+    max-width: 120rem;
     margin: 3rem auto;
+    background-color: global.$blue3;
 }

@@ -7,7 +7,7 @@ const Tabs = () => {
     return(
         <>
             <div className={styles.tabs}>
-                <ul>
+                <ul className={styles.tabsList}>
                     <Tab name="tab1">2015</Tab>
                     <Tab name="tab2">1980</Tab>
                     <Tab name="tab3">Final</Tab>    

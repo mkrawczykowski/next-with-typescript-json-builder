@@ -1,8 +1,28 @@
+@use '../../styles/global/' as global;
+
 .tab{
-    background-color: green;
-    margin: 10px;
+    background-color: global.$blue2;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: 0 0.05rem;
+
+    &:first-of-type{
+        border-top-left-radius: 0.5rem;;
+    }
+
+    &:last-of-type{
+        border-top-right-radius: 0.5rem;;
+    }
+
+    &:hover{
+        background-color: global.$blue1;
+        transition: all 0.3s ease;
+    }
 }
 
 .active{
-    background-color: yellow;
+    background-color: global.$blue1;
 }
