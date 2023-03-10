@@ -4,14 +4,6 @@ import Tab from '../Tab/Tab';
 import TabContent from '../TabContent/TabContent';
 
 const Tabs = () => {
-    
-    // const handleOnClick2 = () => {
-    //     setActiveTabState('tab2')
-    // }
-    // const handleOnClick3 = () => {
-    //     setActiveTabState('tab3')
-    // }
-
     return(
         <>
             <div className={styles.tabs}>
