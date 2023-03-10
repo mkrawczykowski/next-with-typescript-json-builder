@@ -26,7 +26,6 @@ const Tab = ({name, children}) => {
     }
 
     return(
-        // <li onClick={handleOnClick} className={`${classes.join(' ')} ${activeTabState === name ? styles.active : void}`}>{children}</li>    
         <li onClick={handleOnClick} className={`${classes.join(' ')} ${activeTabState === name ? styles.active : null}`}>{children}</li>    
     )
 }
