@@ -2,7 +2,6 @@ import React, {useState, useContext} from 'react';
 import styles from './Tabs.module.scss';
 import Tab from '../Tab/Tab';
 import TabContent from '../TabContent/TabContent';
-import {ActiveTabContext} from '../Store/Store'
 
 const Tabs = () => {
     

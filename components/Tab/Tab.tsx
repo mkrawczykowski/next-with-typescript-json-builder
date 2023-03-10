@@ -11,11 +11,7 @@ const Tab = ({name, children}) => {
 
     let classes: string[] = [styles.tab];
 
-    const setActiveTab = () => {
-        //set context
-    }
-
-    const isActive = (tabNumber: string) => {
+    const isActive = (name: string) => {
         return activeTabState === name? 1 : 0;
     }
 
