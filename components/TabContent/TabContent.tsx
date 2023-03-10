@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TabContent = ({active, children}) => {
+const TabContent = ({name, children}) => {
     return(
         <div>
             {children}

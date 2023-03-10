@@ -5,34 +5,30 @@ import TabContent from '../TabContent/TabContent';
 import {ActiveTabContext} from '../Store/Store'
 
 const Tabs = () => {
-    const [activeTabState, setActiveTabState] = useContext(ActiveTabContext);
-    const handleOnClick2 = () => {
-        setActiveTabState('tab2')
-    }
-    const handleOnClick3 = () => {
-        setActiveTabState('tab3')
-    }
-
-    const isActive = (tabNumber: string) => {
-        return activeTabState === tabNumber? 1 : 0;
-    }
+    
+    // const handleOnClick2 = () => {
+    //     setActiveTabState('tab2')
+    // }
+    // const handleOnClick3 = () => {
+    //     setActiveTabState('tab3')
+    // }
 
     return(
         <>
             <div className={styles.tabs}>
                 <ul>
-                    <Tab active={isActive('tab1')}>2015</Tab>
-                    <Tab active={isActive('tab2')}>1980</Tab>
-                    <Tab active={isActive('tab3')}>Final</Tab>    
+                    <Tab name="tab1">2015</Tab>
+                    <Tab name="tab2">1980</Tab>
+                    <Tab name="tab3">Final</Tab>    
                 </ul>
                 
-                <TabContent active={isActive('tab1')}>
+                <TabContent name="tab1">
                     Tab 1 content
                 </TabContent>
-                <TabContent active={isActive('tab2')}>
+                <TabContent name="tab2">
                     Tab 2 content
                 </TabContent>
-                <TabContent active={isActive('tab3')}>
+                <TabContent name="tab3">
                     Tab 3 content</TabContent>
             </div>
         </>
