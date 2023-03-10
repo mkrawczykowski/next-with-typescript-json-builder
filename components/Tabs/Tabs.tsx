@@ -2,6 +2,7 @@ import React, {useState, useContext} from 'react';
 import styles from './Tabs.module.scss';
 import Tab from '../Tab/Tab';
 import TabContent from '../TabContent/TabContent';
+import Textarea2015 from '../Textarea2015/Textarea2015';
 
 const Tabs = () => {
     return(
@@ -14,7 +15,8 @@ const Tabs = () => {
                 </ul>
                 
                 <TabContent name="tab1">
-                    Tab 1 content
+                    <p>Tu wklej dane skopiowane z arkusza kalkulacyjnego:</p>
+                    <Textarea2015/>
                 </TabContent>
                 <TabContent name="tab2">
                     Tab 2 content
