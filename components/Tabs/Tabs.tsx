@@ -3,6 +3,7 @@ import styles from './Tabs.module.scss';
 import Tab from '../Tab/Tab';
 import TabContent from '../TabContent/TabContent';
 import Textarea2015 from '../Textarea2015/Textarea2015';
+import List1980 from '../List1980/List1980';
 
 const Tabs = () => {
     return(
@@ -19,7 +20,7 @@ const Tabs = () => {
                     <Textarea2015/>
                 </TabContent>
                 <TabContent name="tab2">
-                    Tab 2 content
+                    <List1980/>
                 </TabContent>
                 <TabContent name="tab3">
                     Tab 3 content</TabContent>
