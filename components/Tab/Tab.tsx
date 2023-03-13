@@ -1,13 +1,13 @@
 import React, {useContext, useEffect} from 'react';
 import styles from './Tab.module.scss';
-import {ActiveTabContext} from '../Store/Store'
+import {Context} from '../Store/Store';
 
 const Tab = ({name, children}) => {
-    const [activeTabState, setActiveTabState] = useContext(ActiveTabContext);
+    const [activeTabState, setActiveTabState] = useContext(Context);
 
-    useEffect(()=>{
-        console.log(activeTabState)
-    })
+    // useEffect(()=>{
+    //     console.log(activeTabState)
+    // })
 
     let classes: string[] = [styles.tab];
 

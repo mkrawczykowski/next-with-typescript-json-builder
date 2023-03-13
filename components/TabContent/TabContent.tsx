@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
 import styles from './TabContent.module.scss';
-import {ActiveTabContext} from '../Store/Store';
+import {Context} from '../Store/Store';
 
 const TabContent = ({name, children}) => {
-    const [activeTabState, setActiveTabState] = useContext(ActiveTabContext);
+    const [activeTabState, setActiveTabState] = useContext(Context);
 
     let classes: string[] = [styles.tabContent];
 
