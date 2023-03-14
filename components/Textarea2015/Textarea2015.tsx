@@ -5,15 +5,24 @@ import {Context} from '../Store/Store';
 const handleOnChange = (e, all1980ItemsState, setAll1980ItemsState) => {
     let textareaValue = e.target.value;
     let textareaLines: string[] = textareaValue.split(/\n/);
-    console.log('typeof all1980ItemsState');
-    console.log(typeof all1980ItemsState);
-    textareaLines.forEach((textareaLine) => {
+    console.log('textareaLines');
+    console.log(textareaLines);
+    
+    // textareaLines.forEach((textareaLine) => {
+    //     if (textareaLine !== ''){
+    //     console.log('all1980ItemsState');
+    //     console.log(all1980ItemsState);
+    //     console.log('textareaLine');
+    //     console.log(textareaLine);
         
-        let new1980ItemsState = all1980ItemsState;
-        console.log(typeof new1980ItemsState);
+    // console.log('=================================================')
+    //     }
+        
+    // // console.log('all1980ItemsState 2');
+    // // console.log(all1980ItemsState);
+    // })
 
-        
-    })
+    setAll1980ItemsState(all1980ItemsState.push(textareaLines));
 }
 
 const Textarea2015 = () => {
