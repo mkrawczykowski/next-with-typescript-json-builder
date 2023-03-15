@@ -12,7 +12,6 @@ const handleOnChange = (e, all1980ItemsState, setAll1980ItemsState) => {
         let shortCountryName = lineArray[0];
         let lineObject = {[shortCountryName]: {}};
         
-        lineObject[shortCountryName]['name'] = lineArray[1];
         lineObject[shortCountryName][2015] = {}
         lineObject[shortCountryName][2015]['pdi'] = lineArray[2];
         lineObject[shortCountryName][2015]['idv'] = lineArray[3];
@@ -20,6 +19,7 @@ const handleOnChange = (e, all1980ItemsState, setAll1980ItemsState) => {
         lineObject[shortCountryName][2015]['uai'] = lineArray[5];
         lineObject[shortCountryName][2015]['ltowvs'] = lineArray[6];
         lineObject[shortCountryName][2015]['ivr'] = lineArray[7];
+        lineObject[shortCountryName]['name'] = lineArray[1];
         console.log('lineObject');
         console.log(lineObject);
     })
