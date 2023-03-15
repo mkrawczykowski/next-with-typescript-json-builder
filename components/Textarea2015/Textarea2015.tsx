@@ -20,3 +20,23 @@ const Textarea2015 = () => {
 }
 
 export default Textarea2015;
+
+// const test = {
+//     "AFE": {
+//         name: 'Africa East',
+//         2015: {
+//             'pdi': 12,
+//             'idv': 12,
+//             'mas': 12,
+//             'uai': 12,
+//             'ltowvs': 12,
+//             'ivr': 12,
+//         },
+//         1980: {
+//             'pdi': 12,
+//             'idv': 12,
+//             'mas': 12,
+//             'uai': 12,
+//         }
+//     }
+// }
