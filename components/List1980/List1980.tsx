@@ -11,15 +11,15 @@ const List1980: React.FC = () => {
         <div className={style.list1980}>
             <ListHeader1980></ListHeader1980>
             {
-                all1980ItemsState.map((list1980Item: string) => {
-                    console.log('list1980Item');
-                    console.log(list1980Item);
-                    if (list1980Item !== ''){
-                        return(
-                            <ListItem1980 content={list1980Item}/>    
-                        )    
-                    }
-                })
+                // all1980ItemsState.map((list1980Item: string) => {
+                //     console.log('list1980Item');
+                //     console.log(list1980Item);
+                //     if (list1980Item !== ''){
+                //         return(
+                //             <ListItem1980 content={list1980Item}/>    
+                //         )    
+                //     }
+                // })
             }
         </div>
     )

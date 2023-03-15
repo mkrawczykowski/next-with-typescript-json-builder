@@ -1,13 +1,13 @@
 import React, {createContext, useState} from 'react';
 
 const initialTabState = 'tab1';
-const initial1980ItemsState = new Array;
+const initial1980ItemsState = {};
 
 export const Context = createContext(undefined);
 
 const Store = ({children}) => {
     const [activeTabState, setActiveTabState] = useState(initialTabState);
-    const [all1980ItemsState, setAll1980ItemsState] = useState([]);
+    const [all1980ItemsState, setAll1980ItemsState] = useState(initial1980ItemsState);
 
     console.log('typeof all1980ItemsState');
     console.log(typeof all1980ItemsState);
