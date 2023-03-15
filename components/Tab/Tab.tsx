@@ -5,10 +5,6 @@ import {Context} from '../Store/Store';
 const Tab = ({name, children}) => {
     const [activeTabState, setActiveTabState] = useContext(Context);
 
-    // useEffect(()=>{
-    //     console.log(activeTabState)
-    // })
-
     let classes: string[] = [styles.tab];
 
     const isActive = (name: string) => {

@@ -10,7 +10,6 @@ const List1980: React.FC = () => {
     return(
         <div className={style.list1980}>
             <ListHeader1980></ListHeader1980>
-            {/* <pre>{all1980ItemsState}</pre> */}
             {
                 all1980ItemsState.map((list1980Item: string) => {
                     console.log('list1980Item');
