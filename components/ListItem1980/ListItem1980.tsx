@@ -1,7 +1,10 @@
 import React from 'react';
 import style from './listItem1980.module.scss';
+type Props = {
+    data: string;
+}
 
-const ListItem1980 = () => {
+const ListItem1980 = ({data}) => {
     return(
         <div className={style.listItem1980}>
             <div className={style.listItem1980__column}>ARG</div>
