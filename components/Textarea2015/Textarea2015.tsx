@@ -11,19 +11,19 @@ const handleOnChange = (e, all1980ItemsState, setAll1980ItemsState) => {
             let lineArray = textareaLine.split(/\t/);
             // console.log(lineArray[0]);
             let shortCountryName = lineArray[0];
-            let lineObject = {[shortCountryName]: {}};
+            let lineObject = {};
             
-            lineObject[shortCountryName][2015] = {}
-            lineObject[shortCountryName][2015]['pdi'] = lineArray[2];
-            lineObject[shortCountryName][2015]['idv'] = lineArray[3];
-            lineObject[shortCountryName][2015]['mas'] = lineArray[4];
-            lineObject[shortCountryName][2015]['uai'] = lineArray[5];
-            lineObject[shortCountryName][2015]['ltowvs'] = lineArray[6];
-            lineObject[shortCountryName][2015]['ivr'] = lineArray[7];
-            lineObject[shortCountryName]['countryName'] = lineArray[1];
+            lineObject[2015] = {}
+            lineObject[2015]['pdi'] = lineArray[2];
+            lineObject[2015]['idv'] = lineArray[3];
+            lineObject[2015]['mas'] = lineArray[4];
+            lineObject[2015]['uai'] = lineArray[5];
+            lineObject[2015]['ltowvs'] = lineArray[6];
+            lineObject[2015]['ivr'] = lineArray[7];
+            lineObject['countryName'] = lineArray[1];
             // console.log('lineObject');
             // console.log(lineObject);
-            newAll1980ItemsState[textareaLineIndex] = lineObject;
+            newAll1980ItemsState[shortCountryName] = lineObject;
             // console.log('newAll1980ItemsState');
             // console.log(newAll1980ItemsState);
         }

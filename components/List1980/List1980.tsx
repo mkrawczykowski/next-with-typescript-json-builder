@@ -19,7 +19,7 @@ const List1980: React.FC = () => {
                     console.log(list1980Item[1]);
                     
                         return(
-                            <ListItem1980 key={list1980Item[0]} content={list1980Item[1]}/>    
+                            <ListItem1980 key={list1980Item[0]} itemShortName={list1980Item[0]} content={list1980Item[1]}/>    
                         )    
                     
                 })
