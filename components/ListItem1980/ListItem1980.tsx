@@ -3,7 +3,6 @@ import style from './listItem1980.module.scss';
 import {Context} from '../Store/Store';
 
 const ListItem1980 = ({itemShortName, content}) => {
-    const itemData = Object.values(content);
     const columns2015 = Object.values(content[2015]);
     const itemCountryName = content.countryName;
     const RegExpression = /\s/g;
@@ -34,7 +33,6 @@ const ListItem1980 = ({itemShortName, content}) => {
                 'uai': values1980Array[2],
                 'mas': values1980Array[3],
             }
-            console.log(all1980ItemsStateNew[whichItemShort]);
             setAll1980ItemsState(all1980ItemsStateNew);
         }
     }
