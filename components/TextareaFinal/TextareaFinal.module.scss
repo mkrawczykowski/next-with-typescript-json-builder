@@ -1,0 +1,10 @@
+@use '../../styles/global/' as global;
+
+.textareaFinal{
+    background-color: global.$white;
+    display: block;
+    width: 100%;
+    min-height: 50rem;
+    border: 0.1rem solid global.$blue2;
+    padding: 1rem;
+}
