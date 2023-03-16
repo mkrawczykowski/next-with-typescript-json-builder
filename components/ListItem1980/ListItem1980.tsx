@@ -35,6 +35,7 @@ const ListItem1980 = ({itemShortName, content}) => {
                 'mas': values1980Array[3],
             }
             console.log(all1980ItemsStateNew[whichItemShort]);
+            setAll1980ItemsState(all1980ItemsStateNew);
         }
     }
 
